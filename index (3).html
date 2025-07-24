@@ -1,0 +1,454 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   AI Video Dubbing, Voiceover &amp; Lipsync | Hasnain
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Orbitron:wght@700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js">
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+  </script>
+ </head>
+ <body class="relative">
+  <div id="scroll-progress">
+  </div>
+  <!-- Floating blobs -->
+  <div class="blob blob1">
+  </div>
+  <div class="blob blob2">
+  </div>
+  <div class="blob blob3">
+  </div>
+  <!-- Custom cursor -->
+  <div id="custom-cursor">
+  </div>
+  <!-- Navbar -->
+  <nav>
+   <div class="nav-container">
+    <div class="nav-logo" tabindex="0">
+     Hasnii
+    </div>
+    <div class="nav-links" id="nav-links">
+     <a href="#hero" tabindex="0">
+      Home
+     </a>
+     <a href="#intro" tabindex="0">
+      About
+     </a>
+     <a href="#services" tabindex="0">
+      Services
+     </a>
+     <a href="#portfolio" tabindex="0">
+      Portfolio
+     </a>
+     <a href="#testimonials" tabindex="0">
+      Testimonials
+     </a>
+     <a href="#why" tabindex="0">
+      Why Me
+     </a>
+     <a href="#contact" tabindex="0">
+      Contact
+     </a>
+    </div>
+    <div aria-label="Toggle navigation menu" class="hamburger" id="hamburger" role="button" tabindex="0">
+     <div>
+     </div>
+     <div>
+     </div>
+     <div>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="relative flex flex-col justify-center items-center text-center min-h-screen px-6 pt-20 pb-12 overflow-hidden" id="hero">
+   <!-- Background video -->
+   <video aria-hidden="true" autoplay="" class="absolute top-0 left-0 w-full h-full object-cover opacity-20 -z-10" loop="" muted="" playsinline="">
+    <source src="https://placehold.co/1920x1080/mp4?text=Futuristic+AI+Waveform+Background" type="video/mp4"/>
+   </video>
+   <!-- Animated waveform Lottie -->
+   <lottie-player aria-hidden="true" autoplay="" background="transparent" loop="" speed="1" src="https://assets9.lottiefiles.com/packages/lf20_4kx2q32n.json" style="width: 100%; max-width: 900px; height: 200px;">
+   </lottie-player>
+   <h1 aria-label="Video Dubbing. Voice cloning. Lipsync." class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-600 to-green-400 mt-8 mb-6 font-orbitron">
+    <span id="typed-text">
+    </span>
+   </h1>
+   <div class="flex flex-col sm:flex-row gap-6 mt-6">
+    <a aria-label="Hire on Fiverr" class="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-400 to-green-400 text-black font-semibold text-lg shadow-lg hover:from-green-400 hover:to-cyan-400 transition focus:outline-none focus:ring-4 focus:ring-cyan-400" href="https://www.fiverr.com/users/m_hasnain782/seller_dashboard" rel="my id" tabindex="0" target="_blank">
+     Hire on Fiverr
+    </a>
+    <button aria-label="Watch Demo Video" class="px-8 py-3 rounded-full border-2 border-cyan-400 text-cyan-400 font-semibold text-lg hover:bg-cyan-400 hover:text-black transition focus:outline-none focus:ring-4 focus:ring-cyan-400" id="watch-demo-btn" tabindex="0">
+     Watch Demo
+    </button>
+   </div>
+   <!-- Embedded demo video (hidden initially) -->
+   <video aria-label="Demo video showcasing AI video dubbing and lip sync" class="mt-10 max-w-xl rounded-xl shadow-lg hidden" controls="" id="demo-video">
+    <source src="images & videos/Untitled design (1).mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+   </video>
+  </section>
+  <!-- Personal Intro -->
+  <section class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-12" data-aos="fade-up" id="intro">
+   <div class="tilt w-48 h-48 glow-border p-1">
+    <div class="tilt-inner">
+     <img alt="Portrait of Hasnain, a confident young man with short black hair, wearing a futuristic black jacket with neon green and electric blue accents, glowing softly in a dark studio" class="owner-img w-full h-full object-cover" height="192" src="images & videos/ChatGPT Image Jul 6, 2025, 09_30_21 AM.png" width="192"/>
+    </div>
+   </div>
+   <div class="max-w-xl text-center md:text-left">
+    <h2 class="text-3xl font-orbitron font-bold mb-4 text-cyan-400">
+     I’m Hasnii
+    </h2>
+    <p class="text-lg text-gray-300 font-poppins leading-relaxed">
+     An expert in AI dubbing and lip sync with cloned voices. I transform your videos into multilingual masterpieces — fast, realistic, and accurate.
+    </p>
+   </div>
+  </section>
+  <!-- Services Section -->
+  <section aria-label="Services offered by Hasnain" class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8" id="services">
+   <div aria-describedby="service1-desc" class="flip-card" data-aos="flip-left" tabindex="0">
+    <div class="flip-card-inner glass-card">
+     <div class="flip-card-front flex flex-col justify-center items-center gap-4">
+      <lottie-player aria-hidden="true" autoplay="" background="transparent" loop="" speed="1" src="https://assets9.lottiefiles.com/packages/lf20_4kx2q32n.json" style="width: 80px; height: 80px;">
+      </lottie-player>
+      <h3 class="text-xl font-orbitron font-bold text-cyan-400">
+       Voice Cloning
+      </h3>
+     </div>
+     <div class="flip-card-back flex flex-col justify-center items-center p-4">
+      <p class="text-black font-poppins" id="service1-desc">
+       Create a perfect digital replica of your voice for seamless dubbing and voiceovers.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div aria-describedby="service2-desc" class="flip-card" data-aos="flip-left" data-aos-delay="100" tabindex="0">
+    <div class="flip-card-inner glass-card">
+     <div class="flip-card-front flex flex-col justify-center items-center gap-4">
+      <lottie-player aria-hidden="true" autoplay="" background="transparent" loop="" speed="1" src="https://assets9.lottiefiles.com/packages/lf20_6wq6qv2v.json" style="width: 80px; height: 80px;">
+      </lottie-player>
+      <h3 class="text-xl font-orbitron font-bold text-cyan-400">
+       AI-Powered Lip Sync
+      </h3>
+     </div>
+     <div class="flip-card-back flex flex-col justify-center items-center p-4">
+      <p class="text-black font-poppins" id="service2-desc">
+       Synchronize lip movements with AI precision for ultra-realistic video dubbing.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div aria-describedby="service3-desc" class="flip-card" data-aos="flip-left" data-aos-delay="200" tabindex="0">
+    <div class="flip-card-inner glass-card">
+     <div class="flip-card-front flex flex-col justify-center items-center gap-4">
+      <lottie-player aria-hidden="true" autoplay="" background="transparent" loop="" speed="1" src="https://assets9.lottiefiles.com/packages/lf20_9xqv7v2v.json" style="width: 80px; height: 80px;">
+      </lottie-player>
+      <h3 class="text-xl font-orbitron font-bold text-cyan-400">
+       Multilingual Dubbing
+      </h3>
+     </div>
+     <div class="flip-card-back flex flex-col justify-center items-center p-4">
+      <p class="text-black font-poppins" id="service3-desc">
+       Expand your reach with dubbing in 24+ languages, maintaining voice authenticity.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div aria-describedby="service4-desc" class="flip-card" data-aos="flip-left" data-aos-delay="300" tabindex="0">
+    <div class="flip-card-inner glass-card">
+     <div class="flip-card-front flex flex-col justify-center items-center gap-4">
+      <lottie-player aria-hidden="true" autoplay="" background="transparent" loop="" speed="1" src="https://assets9.lottiefiles.com/packages/lf20_5ngs2ksb.json" style="width: 80px; height: 80px;">
+      </lottie-player>
+      <h3 class="text-xl font-orbitron font-bold text-cyan-400">
+       Natural Voiceovers
+      </h3>
+     </div>
+     <div class="flip-card-back flex flex-col justify-center items-center p-4">
+      <p class="text-black font-poppins" id="service4-desc">
+       Deliver voiceovers that sound human, natural, and engaging for your audience.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Portfolio Section -->
+  <section aria-label="Portfolio of AI video dubbing projects" class="max-w-6xl mx-auto px-6 py-16" id="portfolio">
+   <h2 class="text-4xl font-orbitron font-bold text-cyan-400 mb-12 text-center" data-aos="fade-up">
+    Portfolio (click to view)
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div aria-label="Play video titled 'Tech Review in Spanish' with Spanish language" class="video-thumb" data-video-src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/v1/video-attachments/project_item/attachment/9c3aa60810222ed3c8ff733a4f79dbcd-1752075927145/As%C3%AD%20que%20bienvenido_%20Roger%20Anthony.%20-%20Trim" role="button" tabindex="0">
+     <img alt="Video thumbnail showing a futuristic tech review with Spanish subtitles and neon overlays" height="360" src="images & videos/9050f1a2-fb47-460e-be99-30c0762f52d4.png.png" width="640"/>
+     <div class="overlay">
+     podcast (without Lipsync) - Spanish
+     </div>
+    </div>
+    <div aria-label="Play video titled 'Cooking Show in French' with French language" class="video-thumb" data-video-src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/v1/video-attachments/project_item/attachment/328d73c9769d890a63e4c0f93f514b7f-1752076905304/project_video_2.mp4%20(720p)" role="button" tabindex="0">
+     <img alt="Video thumbnail showing a cooking show with French subtitles and vibrant neon kitchen background" height="360" src="images & videos/laboratory-563423_1280.jpg" width="640"/>
+     <div class="overlay">
+      healthcare video- (eng to spanish)
+     </div>
+    </div>
+    <div aria-label="Play video titled 'Gaming Stream in Japanese' with Japanese language" class="video-thumb" data-video-src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/v1/video-attachments/project_item/attachment/53b41a5e9281788d5745b321445cd473-1752655988446/WhatsApp%20Video%202025-07-16%20at%2001.37.21_5b16a89c" role="button" tabindex="0">
+     <img alt="Video thumbnail showing a gaming stream with Japanese subtitles and cyberpunk neon effects" height="360" src="images & videos/Screenshot 2025-07-23 203639.png" width="640"/>
+     <div class="overlay">
+      Jeffy Puppet video- (spanish to eng)
+     </div>
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+   </div>
+  </section>
+  <!-- Lightbox Modal -->
+  <div aria-label="Video player modal" aria-modal="true" id="lightbox" role="dialog">
+   <span aria-label="Close video player" class="close-btn" role="button" tabindex="0">
+    ×
+   </span>
+   <video autoplay="" controls="">
+   </video>
+  </div>
+  <!-- Testimonials Section -->
+  <section aria-label="Client testimonials" class="max-w-6xl mx-auto px-6 py-16" id="testimonials">
+   <h2 class="text-4xl font-orbitron font-bold text-cyan-400 mb-12 text-center" data-aos="fade-right">
+    Testimonials
+   </h2>
+   <div aria-atomic="true" aria-live="polite" class="testimonials-container" tabindex="0">
+    <div class="testimonial-card" data-aos="zoom-in" tabindex="0">
+     <div class="testimonial-profile">
+      <img alt="Profile picture of client 1, a middle-aged woman with short hair and glasses, smiling" height="100" src="https://storage.googleapis.com/a1aa/image/2060441a-b305-4068-b175-0175ed08721e.jpg" width="100"/>
+     </div>
+     <div aria-label="5 star rating" class="testimonial-stars">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+     </div>
+     <p class="font-poppins text-gray-300">
+      "Hasnain’s AI dubbing transformed our product videos. The lip sync is flawless and the voice cloning is eerily accurate."
+     </p>
+     <p class="mt-2 font-semibold text-cyan-400">
+      - Maria G.
+     </p>
+    </div>
+    <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100" tabindex="0">
+     <div class="testimonial-profile">
+      <img alt="Profile picture of client 2, a young man with a beard and headphones, looking happy" height="100" src="https://storage.googleapis.com/a1aa/image/9f2be427-76ac-4ed3-4702-49fa8a712510.jpg" width="100"/>
+     </div>
+     <div aria-label="4 star rating" class="testimonial-stars">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="far fa-star">
+      </i>
+     </div>
+     <p class="font-poppins text-gray-300">
+      "The multilingual dubbing service helped us reach new markets. Delivery was fast and professional."
+     </p>
+     <p class="mt-2 font-semibold text-cyan-400">
+      - Liam K.
+     </p>
+    </div>
+    <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200" tabindex="0">
+     <div class="testimonial-profile">
+      <img alt="Profile picture of client 3, a woman with long hair and a bright smile" height="100" src="https://storage.googleapis.com/a1aa/image/800c6dad-7f54-46d3-cdcf-36b8f1606b3b.jpg" width="100"/>
+     </div>
+     <div aria-label="5 star rating" class="testimonial-stars">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+     </div>
+     <p class="font-poppins text-gray-300">
+      "The natural voiceovers sound so human, it’s hard to believe it’s AI. Highly recommended!"
+     </p>
+     <p class="mt-2 font-semibold text-cyan-400">
+      - Sophia M.
+     </p>
+    </div>
+    <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300" tabindex="0">
+     <div class="testimonial-profile">
+      <img alt="Profile picture of client 4, a man with glasses and a friendly smile" height="100" src="https://storage.googleapis.com/a1aa/image/cb784b88-cec8-4d9b-384a-f341a8c8a51d.jpg" width="100"/>
+     </div>
+     <div aria-label="5 star rating" class="testimonial-stars">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+     </div>
+     <p class="font-poppins text-gray-300">
+      "Hasnain’s AI-powered lip sync is the best I’ve seen. It brought my animations to life."
+     </p>
+     <p class="mt-2 font-semibold text-cyan-400">
+      - Ethan R.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Why Choose Me Section -->
+  <section aria-label="Reasons to choose Hasnain for AI dubbing" class="max-w-6xl mx-auto px-6 py-16" id="why">
+   <h2 class="text-4xl font-orbitron font-bold text-cyan-400 mb-12 text-center" data-aos="flip-up">
+    Why Choose Me
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
+    <div aria-label="24 plus languages supported" data-aos="fade-up" tabindex="0">
+     <i class="fas fa-globe-americas text-6xl">
+     </i>
+     <div class="counter" data-target="24">
+      0
+     </div>
+     <p class="font-poppins font-semibold mt-2">
+      Languages
+     </p>
+    </div>
+    <div aria-label="Realistic lip sync" data-aos="fade-up" data-aos-delay="100" tabindex="0">
+     <i class="fas fa-lips text-6xl">
+     </i>
+     <div class="counter" data-target="99">
+      0
+     </div>
+     <p class="font-poppins font-semibold mt-2">
+      Cloned Voice Match 99%
+     </p>
+    </div>
+    <div aria-label="Realistic lip sync" data-aos="fade-up" data-aos-delay="200" tabindex="0">
+     <i class="fas fa-smile-beam text-6xl">
+     </i>
+     <div class="counter" data-target="100">
+      0
+     </div>
+     <p class="font-poppins font-semibold mt-2">
+      Realistic Lip Sync
+     </p>
+    </div>
+    <div aria-label="24 hour delivery available" data-aos="fade-up" data-aos-delay="300" tabindex="0">
+     <i class="fas fa-clock text-6xl">
+     </i>
+     <div class="counter" data-target="24">
+      0
+     </div>
+     <p class="font-poppins font-semibold mt-2">
+      24hr Delivery Available
+     </p>
+    </div>
+   </div>
+   <div class="mt-12 max-w-xl mx-auto">
+    <ul aria-label="Checklist of features" class="checklist-item">
+     <li>
+      <i aria-hidden="true" class="fas fa-check-circle">
+      </i>
+      24+ Languages
+     </li>
+     <li>
+      <i aria-hidden="true" class="fas fa-check-circle">
+      </i>
+      Realistic Lip Sync
+     </li>
+     <li>
+      <i aria-hidden="true" class="fas fa-check-circle">
+      </i>
+      Cloned Voice Match 99%
+     </li>
+     <li>
+      <i aria-hidden="true" class="fas fa-check-circle">
+      </i>
+      24hr Delivery Available
+     </li>
+    </ul>
+   </div>
+  </section>
+  <!-- Fiverr Call to Action -->
+  <section aria-label="Fiverr call to action" class="fiverr-banner">
+   Need it dubbed? Let’s make your content multilingual and viral.
+   <a aria-label="Go to Fiverr profile" class="fiverr-button" href="https://www.fiverr.com/s/kL3bl8N" rel="noopener" target="_blank">
+    Fiverr
+   </a>
+  </section>
+  <!-- Contact Me Section -->
+  <section aria-label="Contact form to reach Hasnain" class="max-w-3xl mx-auto px-6 py-16" id="contact">
+   <h2 class="text-4xl font-orbitron font-bold text-cyan-400 mb-12 text-center" data-aos="fade-up">
+    Contact Me
+   </h2>
+   <form class="contact-form" id="contact-form" novalidate="">
+    <div class="form-group">
+     <input aria-describedby="name-error" aria-required="true" class="form-input" id="name" name="name" placeholder=" " required="" type="text"/>
+     <label for="name">
+      Name
+     </label>
+     <span class="text-red-500 text-sm hidden" id="name-error">
+      Please enter your name
+     </span>
+    </div>
+    <div class="form-group">
+     <input aria-describedby="email-error" aria-required="true" class="form-input" id="email" name="email" placeholder=" " required="" type="email"/>
+     <label for="email">
+      Email
+     </label>
+     <span class="text-red-500 text-sm hidden" id="email-error">
+      Please enter a valid email
+     </span>
+    </div>
+    <div class="form-group">
+     <textarea aria-describedby="message-error" aria-required="true" class="form-textarea" id="message" name="message" placeholder=" " required=""></textarea>
+     <label for="message">
+      Message
+     </label>
+     <span class="text-red-500 text-sm hidden" id="message-error">
+      Please enter your message
+     </span>
+    </div>
+    <button aria-label="Send message" class="submit-btn" type="submit">
+     Send Message
+    </button>
+   </form>
+   <div aria-label="Social media links" class="social-icons mt-8">
+    <a aria-label="Fiverr" href="https://www.fiverr.com/s/kL3bl8N" rel="noopener" target="_blank">
+     <i class="fab fa-fiverr">
+     </i>
+    </a>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+   © 2025 Designed by Hasnain | AI Video Dubbing Expert & web designer
+   <div aria-label="Footer social media links" class="social-icons mt-2">
+   </div>
+  </footer>
+  <script src="web.js"></script>
+ </body>
+</html>
